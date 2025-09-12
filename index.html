@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat - AI</title>
+  <script type="module" crossorigin src="./assets/index-Cq9WrUEH.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DFPQNzYr.css">
+</head>
+
+<body class="bg-gray-800 text-white">
+
+  <main class="max-w-xl w-full mx-auto min-h-screen h-full flex items-center flex-col justify-center gap-4 py-10">
+    <h1 class="text-transparent bg-clip-text text-center text-6xl font-bold
+      bg-gradient-to-r from-blue-500 to-fuchsia-400">Chat - AI</h1>
+    <form id="form" class="w-full">
+      <div class="relative mb-4">
+
+        <input type="text" id="input"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
+          placeholder="Pregunta lo que quieras" required />
+
+
+        <button id="submit" type="submit" aria-label="send"
+          class="cursor-pointer absolute text-gray-300 top-1/2 right-0 -translate-1/2 rounded-full">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-send-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4.698 4.034l16.302 7.966l-16.302 7.966a.503 .503 0 0 1 -.546 -.124a.555 .555 0 0 1 -.12 -.568l2.468 -7.274l-2.468 -7.274a.555 .555 0 0 1 .12 -.568a.503 .503 0 0 1 .546 -.124z" /><path d="M6.5 12h14.5" /></svg>
+        </button>
+      </div>
+      <div id="chat-messages">
+      </div>
+    </form>
+  </main>
+
+</body>
+
+</html>
