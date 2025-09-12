@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://dhaner.github.io/chat-ai/",
   
   "scripts": {
     "dev": "vite",
