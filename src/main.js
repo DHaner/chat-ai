@@ -3,15 +3,11 @@ import { streamText } from 'ai';
 import DOMPurify from "dompurify";
 import { marked } from "marked";
 
-
-
-const openRouter = createOpenRouter({apiKey: import.meta.env.VITE_OPENROUTER_KEY })
+const openRouter = createOpenRouter({apiKey: import.meta.env.VITE_API_KEY})
 
 const form = document.querySelector('form');
 const chatMessages = document.querySelector("#chat-messages")
 const submitButton = document.querySelector("#submit") 
-
-
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -42,7 +38,6 @@ form.addEventListener('submit', async (e) => {
     
     const htmlFormateado = marked(respuestaMarkdown);
     chatMessages.innerHTML = DOMPurify.sanitize(htmlFormateado);
-    console.log(respuestaMarkdown)
   } 
 
   submitButton.disabled = false
