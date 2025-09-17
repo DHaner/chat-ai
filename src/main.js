@@ -3,7 +3,7 @@ import { streamText } from 'ai';
 import DOMPurify from "dompurify";
 import { marked } from "marked";
 
-const openRouter = createOpenRouter({apiKey: import.meta.env.VITE_API_KEY})
+const openRouter = createOpenRouter({apiKey: import.meta.env.API_KEY})
 
 const form = document.querySelector('form');
 const chatMessages = document.querySelector("#chat-messages")
